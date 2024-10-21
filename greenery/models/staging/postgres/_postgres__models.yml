@@ -3,15 +3,61 @@ version: 2
 models: 
   - name: stg_postgres__addresses
     description: "A model with users addresses"
+
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+          - unique
+      
   - name: stg_postgres__events
     description: "A model with users events"
+
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique 
   - name: stg_postgres__order_items
     description: "A model with order products"
+
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique   
   - name: stg_postgres__orders
     description: "A model with users orders"
+
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
   - name: stg_postgres__products
     description: "A model with products"
+
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
   - name: stg_postgres__promos
     description: "A model with promos"
+
+    columns:
+      - name: promo_id
+        tests:
+          - not_null
+          - unique
+
   - name: stg_postgres__users
     description: "A model with users information"
+
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
