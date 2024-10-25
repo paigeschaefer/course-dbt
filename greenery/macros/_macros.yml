@@ -1,0 +1,6 @@
+
+macros:
+  - name: roles 
+    description: grant permission to users 
+    arguemtns: user 
+    

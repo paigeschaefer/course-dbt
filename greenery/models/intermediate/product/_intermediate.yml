@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_sessions_timings
+    description: Information about orders  
+    columns:
+      - name: session_id
+      - name: session_started_at
+      - name: session_ended_at
+
+  - name: int_session_events
+    description: Information about events 
+    columns:  
+      - name: event_id 
+      - name: session_id 
+      - name: user_id 
+      - name: page_views
+      - name: add_to_carts 
+      - name: checkouts
+      - name: packages_shipped 
+      - name: order_id
+      - name: product_id 
+      - name: name 
